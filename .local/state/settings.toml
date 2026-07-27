@@ -1,0 +1,235 @@
+config_version = 2
+
+[backdrop]
+blur_intensity = 0.0
+enabled = true
+tint_intensity = 0.0
+
+[bar.default]
+capsule_radius = 0
+center = [ "clock", "weather" ]
+concave_edge_corners = false
+end = [ "tray", "notifications", "clipboard", "network", "sysmon", "volume", "keyboard_layout", "session" ]
+font_family = "JetBrainsMono Nerd Font"
+margin_ends = 0
+padding = 8
+radius = 0
+shadow = false
+start = [ "workspaces", "media" ]
+thickness = 32
+widget_spacing = 7
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[idle]
+pre_action_fade_seconds = 0
+
+[location]
+address = "Якутск"
+
+[lockscreen]
+enabled = false
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@HDMI-A-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 960.0
+    cy = 961.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_password_hint = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 960.0
+    cy = 961.0
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_password_hint = true
+
+[notification]
+show_actions = false
+
+[osd.kinds]
+brightness = false
+keyboard_layout = false
+media = false
+privacy = false
+volume = false
+
+[plugins]
+enabled = [ "noctalia/wallhaven" ]
+
+[shell]
+button_borders = false
+corner_radius_scale = 0.0
+font_family = "JetBrainsMono Nerd Font"
+niri_overview_type_to_launch_enabled = true
+polkit_agent = true
+
+    [shell.animation]
+    enabled = false
+
+    [shell.launcher]
+    compact = true
+
+    [shell.panel]
+    session_placement = "floating"
+    session_position = "center"
+
+    [shell.screen_corners]
+    size = 1
+
+    [shell.session]
+    grid_columns = 5
+
+        [[shell.session.actions]]
+        action = "lock"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "1"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "logout"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "1"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "lock_and_suspend"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "3"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "reboot"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "2"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "shutdown"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "3"
+        variant = "destructive"
+
+[theme]
+builtin = "Gruvbox"
+community_palette = "Gruvbox Material"
+custom_palette = "wallhaven-lykljp-ts"
+mode = "dark"
+wallpaper_scheme = "m3-tonal-spot"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "cava", "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
+    community_ids = [ "neovim", "vscode", "rofi", "discord", "heroiclauncher", "obs", "papirus-icons", "prismlauncher", "telegram" ]
+
+[wallpaper]
+directory = "/home/netus/Wallpaper"
+
+    [wallpaper.default]
+    path = "/home/netus/Wallpaper/gruvbox_image40.png"
+
+    [wallpaper.last]
+    path = "/home/netus/Wallpaper/gruvbox_image40.png"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/netus/Wallpaper/gruvbox_image40.png"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/netus/Wallpaper/gruvbox_image40.png"
+
+[widget.clipboard]
+scale = 0.90000000000000013
+
+[widget.clock]
+scale = 0.90000000000000013
+
+[widget.keyboard_layout]
+scale = 0.90000000000000013
+show_icon = false
+
+[widget.media]
+hide_album_art = true
+hide_when_no_media = true
+max_length = 280
+scale = 0.90000000000000013
+title_scroll = "always"
+
+[widget.network]
+enabled = false
+scale = 0.90000000000000013
+
+[widget.notifications]
+scale = 0.90000000000000013
+
+[widget.session]
+enabled = false
+scale = 0.90000000000000013
+
+[widget.sysmon]
+scale = 0.90000000000000013
+stat = "ram_used"
+
+[widget.tray]
+scale = 0.90000000000000013
+
+[widget.volume]
+scale = 0.90000000000000013
+
+[widget.weather]
+scale = 0.90000000000000013
+show_condition = false
+
+[widget.workspaces]
+scale = 1.1000000000000001
+style = "minimal"
