@@ -1,1 +1,1 @@
-niri+noctalia dotfiles for my own use.
+niri+noctalia dotfiles for my own use. gruvbox
