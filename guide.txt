@@ -1,1 +1,0 @@
-required packages: niri wayland xdg-desktop-portal-gnome xdg-desktop-portal-gtk xwayland-satellite ttf-jetbrains-mono-nerd swaybg noctalia polkit pipes-rs nwg-look noto-fonts noto-fonts-cjk fish kitty networkmanager nautilus linux-zen linux-zen-headers gtk3 gtk4 adwaita base-devel ly qt5ct qt6ct
